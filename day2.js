@@ -49,16 +49,29 @@
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
-const turtle = ['Donatello','Leonardo','Raphael','Michaelangelo']
+// const turtle = ['Donatello','Leonardo','Raphael','Michaelangelo']
 
-for (const element of turtle){
-    console.log(element.toUpperCase());
-}
+// for (const element of turtle){
+//     console.log(element.toUpperCase());
+// }
 
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
+// console.log(favMovies[8]);
+// console.log(favMovies.sort()); //Puts the array in alphabetical order
+// console.log(favMovies.pop()); //Removes the last element in array
+// favMovies.push('Gaudians of the Galaxy') // adds element to the end of array
+// console.log(favMovies);
+// console.log(favMovies.reverse()); // Pretty self explanantory
+// console.log(favMovies.shift());
+// favMovies.unshift('Bee Movie') //Adds to the start of the array
+// console.log(favMovies);
+// favMovies.splice(15,1,'Avatar') // I think it alter the array permanantly until another change is made
+// console.log(favMovies);
+// console.log(favMovies);
 
 ////////////////////////////////
 // Where is Waldo
@@ -73,3 +86,19 @@ for (const element of turtle){
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+function median(arr) {
+    // sort our array
+    arr.sort()
+    
+    const middleIndex = arr.length/2;
+
+    if(arr.length % 2!== 0){
+        return arr[Math.floor(middleIndex)]
+    }
+
+    return(arr[middleIndex - 1] + arr[middleIndex] / 2)
+
+}
+console.log(median(nums));
