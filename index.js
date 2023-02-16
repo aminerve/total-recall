@@ -95,7 +95,7 @@
 // D. Savings account
 // let bank_account = 0
 // for(let i = 1; i<=100; i++){
-//     bank_account+= i*2 
+//     bank_account+= i*2
 //     console.log(`You have $${bank_account} dollars`);
 // }
 //_____________________________________________________________
@@ -129,7 +129,7 @@
 // console.log(myArray);
 // myArray.splice(4,1)
 // console.log(myArray);
-// Array.prototype.reverse(myArray) // This did not reverse or mutate the array. Not sure If I did it wrong or if it is not supposed to work for learning purposes. mutate means to alter or change 
+// Array.prototype.reverse(myArray) // This did not reverse or mutate the array. Not sure If I did it wrong or if it is not supposed to work for learning purposes. mutate means to alter or change
 // myArray.reverse() // This did return a full reversed version of the array
 // console.log(myArray);
 // F. Biggie Smalls
@@ -182,7 +182,7 @@
 // 	  "wool scarf",
 // 	  "raybans"
 // 	],[
-//       // Thom's PJ's 
+//       // Thom's PJ's
 // 		'tank top',
 // 		'pj pants',
 // 		'durag'
@@ -259,17 +259,64 @@
 
 // V. Objects
 // A.
-// const user(name,email,age,purchased) = {
-// 	this.name = name;
-// 	this.email = email
+const user = {
+  name: "Bryan",
+  email: "brodriguez275@yahoo.com",
+  age: 24,
+  purchased: [],
+};
 
-// }
 // B.
+user.email = "bryanrod275@gmail.com";
+user.age++;
+
 // C.
+user.location = "South Dakota";
+console.log(user);
 // D.
+user.purchased.push("carbohydrates");
+user.purchased.push("peace of mind");
+user.purchased.push("Merino jodhpurs");
+console.log(user);
+console.log(user.purchased[2]);
 // E.
+user.friend = {
+  name: "Sally",
+  age: 22,
+  location: "Japan",
+  purchased: [],
+};
+
+console.log(user.friend.name);
+console.log(user.friend.location);
+
+user.friend.age = 55;
+user.friend.purchased.push("The One Ring");
+user.friend.purchased.push("A Latte");
+console.log(user);
+console.log(user.friend.purchased[1]);
 // F.
+
+for (let i = 0; i < user.purchased.length; i++) {
+  console.log(user.purchased[i]);
+}
+for (let i = 0; i < user.friend.purchased.length; i++) {
+  console.log(user.friend.purchased[i]);
+}
 // G.
+function updateUser() {
+    user.age++;
+    user.name = user.name.toUpperCase();
+}
+
+function oldAndLoud(user){
+	age++;
+    name.toUpperCase();
+}
+updateUser();
+
+oldAndLoud(user.friend)
+console.log(user.friend);
 //_____________________________________________________________
 
 // Extra
