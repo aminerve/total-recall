@@ -80,17 +80,25 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                    ["Lucinda", "Jacc", "Neff", "Snoop"],
-                    ["Petunia", ["Baked Goods", "Waldo"]]];
-console.log(whereIsWaldo.splice(1,1))
-console.log(whereIsWaldo);
-whereIsWaldo[1][2]="No One"
-console.log(whereIsWaldo[2][1][1]);
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                     ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                     ["Petunia", ["Baked Goods", "Waldo"]]];
+// console.log(whereIsWaldo.splice(1,1))
+// console.log(whereIsWaldo);
+// whereIsWaldo[1][2]="No One"
+// console.log(whereIsWaldo[2][1][1]);
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+for(let i=1; i <=20; i++){
+    console.log('Love me pet me! HSSSSS!');
 
+    if(i%2===0){
+        const kittyTalk = ["human...why you taking pictures of me?", "...the catnip made me do it...","...why does the red dot always get away..."]
+        var randomElement = kittyTalk[Math.floor(Math.random()*kittyTalk.length)]
+        console.log(randomElement);
+    }
+}
 
 ////////////////////////////////
 //  Find the Median
