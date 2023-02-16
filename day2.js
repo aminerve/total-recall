@@ -58,20 +58,24 @@
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
-// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
-// console.log(favMovies[8]);
-// console.log(favMovies.sort()); //Puts the array in alphabetical order
-// console.log(favMovies.pop()); //Removes the last element in array
-// favMovies.push('Gaudians of the Galaxy') // adds element to the end of array
-// console.log(favMovies);
-// console.log(favMovies.reverse()); // Pretty self explanantory
-// console.log(favMovies.shift());
-// favMovies.unshift('Bee Movie') //Adds to the start of the array
-// console.log(favMovies);
-// favMovies.splice(15,1,'Avatar') // I think it alter the array permanantly until another change is made
-// console.log(favMovies);
-// console.log(favMovies);
+console.log(favMovies[8]);
+console.log(favMovies.sort()); //Puts the array in alphabetical order
+console.log(favMovies.pop()); //Removes the last element in array
+favMovies.push('Gaudians of the Galaxy') // adds element to the end of array
+console.log(favMovies);
+console.log(favMovies.reverse()); // Pretty self explanantory
+console.log(favMovies.shift());
+favMovies.unshift('Bee Movie') //Adds to the start of the array
+console.log(favMovies);
+favMovies.splice(15,1,'Avatar') // I think it alter the array permanantly until another change is made
+const half = Math.ceil(favMovies.length / 2) //
+let halfArr = favMovies.slice(half); // This does not permanently  alter the array
+console.log(halfArr);
+console.log(favMovies);
+console.log(favMovies.indexOf('Fast and Furios')) // You get negative number when you call the index of an element that doesn't exist
+// 12. No because const only applies to the naming of the array. Using const over let just makes things more consistent. The focus is the change of the array not the name of the array
 
 ////////////////////////////////
 // Where is Waldo
@@ -86,19 +90,19 @@
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
-const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
-function median(arr) {
-    // sort our array
-    arr.sort()
+// function median(arr) {
+//     // sort our array
+//     arr.sort()
     
-    const middleIndex = arr.length/2;
+//     const middleIndex = arr.length/2;
 
-    if(arr.length % 2!== 0){
-        return arr[Math.floor(middleIndex)]
-    }
+//     if(arr.length % 2!== 0){
+//         return arr[Math.floor(middleIndex)]
+//     }
 
-    return(arr[middleIndex - 1] + arr[middleIndex] / 2)
+//     return(arr[middleIndex - 1] + arr[middleIndex] / 2)
 
-}
-console.log(median(nums));
+// }
+// console.log(median(nums));
