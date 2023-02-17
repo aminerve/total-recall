@@ -68,3 +68,34 @@ class Person{
         this.bankAccount-=hampster.getPrice();
     }
 }
+
+const timmy = new Person('Timmy');
+for(i=0;i<=5;i++){
+    timmy.ageUp()
+}
+for(i=0;i<=5;i++){
+    timmy.eat()
+}
+for(i=0;i<=5;i++){
+    timmy.exercise()
+}
+for(i=0;i<=9;i++){
+    timmy.ageUp()
+}
+
+const gus = new Hamster('Gus')
+gus.owner = 'Timmy'
+timmy.buyHamster(gus)
+
+for(i=0;i<=15;i++){
+    timmy.ageUp()
+}
+for(i=0;i<=2;i++){
+    timmy.eat()
+}
+for(i=0;i<=2;i++){
+    timmy.exercise()
+}
+
+console.log(timmy);
+
